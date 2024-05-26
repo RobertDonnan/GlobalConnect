@@ -1,0 +1,189 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 12 Feb 2024, 12:44:56
+    Author     : User
+*/
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+     display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+#content_container {
+    width: 100%;
+    max-width: 1600px; /* Set a maximum width for desktop view */
+    background-color: #D9D9D9;
+  overflow: auto; /* Enable scrolling if needed */
+    font-weight: bold;
+    border-radius: 100%;
+}
+
+/* Button */
+#button_container {
+    text-align: center;
+    overflow: auto; /* Enable scrolling if needed */
+}
+
+#button_container button {
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 40px;
+    background-color: #00E2B2;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1vw; /* Adjust font size */
+    border: none;
+    cursor: pointer;
+    overflow: auto; /* Enable scrolling if needed */
+}
+/* New button row container */
+#button_row {
+    display: flex; /* Display buttons side by side */
+    justify-content: space-between; /* Distribute space evenly between buttons */
+}
+
+#button_row button {
+    /* Adjust individual button styles here */
+    width: 48%; /* Set desired width for each button */
+    background-color: #00E2B2;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1vw;
+    border: none;
+    cursor: pointer;
+}
+.button_item {
+    display: flex;
+    flex-direction: column; /* Stack button and text vertically */
+    align-items: center; /* Center text horizontally */
+    margin-bottom: 20px; /* Add spacing between items */
+}
+
+h2{
+    font-size: 2vw;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    width: 75%;
+    height: 30px;
+    background-color: #D9D9D9;
+}
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  padding: 2px 32px;
+  overflow: auto;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+    /* Adjust styles for smaller screens */
+    #content_container {
+         width: 20%;
+    font-weight: bold;
+   border-radius: 80%;;
+    overflow: auto;
+    }
+    #form_header {
+        font-size: 8vw;
+    }
+    #button_container {
+        font-size: 2vw;
+    }
+    
+h2{
+    font-size: 8vw;
+    text-align: center;
+}
+
+#result
+{
+     font-size: 2vw;
+    text-align: center;
+}
+
+
+
+
+}
+
